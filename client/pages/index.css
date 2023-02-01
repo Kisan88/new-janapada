@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: aqua;
+}
+main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-left {
+    height: 90vh;
+    width: 50%;
+    background-color: black;
+}
+.main-right {
+    height: 90vh;
+    width: 50%;
+    background-color: blue;
+}
