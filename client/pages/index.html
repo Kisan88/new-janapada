@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+    
+    
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -14,62 +25,37 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
     <!-- navbar starts here -->
     <nav>
 
-        <div class="navbar">
-	
-            <div class="logo">
-                 <img class="navbar-img" src="../images/logo.jpeg"  alt="">
-            </div>
-            
-            
-            <ul class="links" id="nav" style="font-family: 'Montserrat', sans-serif;">
-                <li><a onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" href="#">Home</a></li>
-                
-                <!-- <ul class="servo" id="serv">
-                    
-                    <li class="init" data-value="value 1"><a href="../product.html">service1</a></li>
-                    <li data-value="value 2"><a href="">service2</a></li>
-                    
-                </ul> -->
-                <div class="dropdown show">
-                    <a id="service" onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      SERVICES
-                    </a>
-                  
-                    <div id="drop" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a  onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" class="dropdown-item" href="../product.html">Action</a>
-                      <a onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'"class="dropdown-item" href="#">Another action</a>
-                    </div>
-                  </div>
-            
-                
-                <li><a onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" href="#">Product</a></li>
-                <li><a onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" href="#">Books</a></li>
-                <li><a onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" href="#">Contact</a></li>
-                <li><a onMouseOver="this.style.color= '#cecece'" onMouseOut="this.style.color='#000000'" href="#" id="login">Login</a></li>
-                
-                
-            </ul>
-            
-            <div class="toggle">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
-            
-        </div>        
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav>
         
     </nav>
     <!-- navbar ends here -->
+    <div class="main-heading">
+      <h1 class="animate__animated animate__fadeInDown">Janapada Loka</h1>
+    </div>
     <main>
+      
         <div class="main-left">
-            <h1>Janapada Loka</h1>
+            
             <div class="gallery-image">
                 <div class="img-box">
                   <img src="https://picsum.photos/350/250?image=444" alt="" />

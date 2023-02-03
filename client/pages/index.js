@@ -1,24 +1,16 @@
 // navbar js goes here
 
-const navbar = document.querySelector('.navbar');
-
-navbar.querySelector('.toggle').addEventListener('click', () => {
-
-  navbar.classList.toggle('collapsed');
-
-});
-
-
-
-window.addEventListener('scroll', e => {
-
-  let windowY = window.pageYOffset;
-
-  let navbarHeight = document.querySelector('.navbar').offsetHeight;
-
-  if (windowY > navbarHeight) navbar.classList.add('sticky');else
-  navbar.classList.remove('sticky');
-
-});
+document.onreadystatechange = function() {
+  let lastScrollPosition = 0;
+  const navbar = document.querySelector('.navbar');
+  window.addEventListener('scroll', function(e) {
+    lastScrollPosition = window.scrollY;
+    
+    if (lastScrollPosition > 10)
+      navbar.classList.add('navbar-dark');
+    else
+      navbar.classList.remove('navbar-dark');
+  });
+}
 
 // navbar js ends here
