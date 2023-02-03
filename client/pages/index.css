@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0.4s ease all;
 }
 
 main {
@@ -14,7 +15,11 @@ main {
 .main-left {
     height: 90vh;
     width: 50%;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: black; */
 }
 .main-right {
     height: 90vh;
@@ -22,15 +27,15 @@ main {
     background-color: blue;
 }
 
-  * {
+  /* * {
     box-sizing: border-box;
-    transition: 0.4s ease all;
-  }
+    
+  } */
   
 
   
 
-  
+  /* navbar css */
   .navbar {
     width: 100%;
    
@@ -42,7 +47,7 @@ main {
     height: 10vh;
     display: flex;
     align-items: center;
-    box-shadow: 5px 10px 18px #888888;
+    box-shadow: 2.5px  2.5px 20px #000000;
     
    
   }
@@ -54,7 +59,7 @@ main {
     display: block;
   }
 
-  img{
+  .navbar-img{
     border-radius: 50%;
     height: 50px;
     margin-left: 100px;
@@ -334,3 +339,77 @@ main {
       
  
   }
+
+  /* card css */
+
+  .gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 450px;
+    width: 450px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 450px;
+    width: 450px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 450px;
+    width: 450px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+    /* text-align: justify; */
+  }
+    
