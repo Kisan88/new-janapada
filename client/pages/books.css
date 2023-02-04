@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* transition: 0.4s ease all; */
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  height: 70px;
+
+}
+
+main {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ 
+ /* navbar css starts */
+  nav{
+    height: 70px;
+  
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-function: ease-in-out;
+    z-index: 10;  
+  }
+  
+  
+  .navbar-dark {
+    background-color: rgba(0, 0, 0, 1) !important;
+    color: #ffffff !important;
+  }
+  
+  .navbar-collapse, .navbar-nav, .nav-item {
+    color: inherit !important;
+  }
+
+  .navbar-img
+  {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 180px;
+  }
+  #navbarNavAltMarkup
+  {
+    
+    margin-right: 180px !important;
+  }
+  .nav-button
+  {
+    padding-left: 10px;
+    transition-duration: 0.5s;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.4rem;
+    
+
+  }
+
+  .nav-item:hover{
+    color: #8167a9 !important;
+  }
+
+  /* #i1 , #i3, #i5{
+    padding-left: 20px;
+  } */
+
+  .nav-item:after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #8167a9;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  /* .nav-item:after #s1{
+    width: 60% !important;
+  } */
+
+
+  .nav-item:hover:after{
+    bottom: 0;
+    opacity: 1;
+  }
+  .nav-item.active:hover:after{
+    opacity: 0;
+  }
+  .nav-item{
+    position: relative;
+    transition: all 200ms linear;
+    margin-left: 20px !important;
+  }
+
+   /* .nav-links ul li ul{
+    position: absolute;
+    left: 0;
+    width: 20px;
+    background: #fff;
+    display: none;
+   
+  } */
+  
+
+  .service{
+    position: absolute;
+    /* left: 0%; */
+    width: 140px;
+    background: #fff;
+    float: right;
+    padding-left: 0px ;
+   padding-bottom: 20px;
+    display: none;
+    padding-right: 35px;
+    border-radius: 5px;
+    /* visibility: hidden; */
+  }
+
+   /* .serv:hover + #s1{
+    display: block;
+  } */
+
+   #serv:hover > ul{
+    /* visibility: visible; */
+    display: block;
+  } 
+
+  .service-dark{
+    background-color: rgba(0, 0, 0, 1) !important;
+    color: #ffffff !important;
+    margin-bottom: 30px;
+  }
+
+
+  .nav-links ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    display: none;
+  }
+
+
+  /* navbar css ends */
+
+
+  
