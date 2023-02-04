@@ -25,6 +25,12 @@ main {
 .main-right {
     height: 550px;
     width: 50%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
     /* background-color: blue; */
 }
 
@@ -45,7 +51,7 @@ main {
   
   
   .navbar-dark {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(0, 0, 0, 1) !important;
     color: #ffffff !important;
   }
   
@@ -153,3 +159,96 @@ main {
     padding-left: 10px;
     transition-duration: 0.5s;
   }
+
+  /* main-right */
+  .main-right .news-section{
+    margin: 2em;
+    padding: 2em;
+    border-radius: 20px;
+    max-width: 500px;
+    min-width: 300px;
+    max-height: 500px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .main-right .news-section h1{
+    font-size: 2em;
+    font-weight: 800;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black; 
+  }
+
+  .main-right .news-section marquee{
+    max-height: 300px;
+  }
+
+  .main-right .news-section marquee ul{
+    padding: 0;
+  }
+
+  .main-right .news-section marquee ul li{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 2px solid black;
+    margin-bottom: 1em;
+    padding: 10px;
+  }
+
+  .main-right .news-section marquee ul li .heading{
+    margin-bottom: 1em;
+  } 
+
+  .main-right .news-section marquee ul li .heading h2{
+    text-transform: capitalize;
+    /* margin: 0 16px 5px 0; */
+  }
+
+  .main-right .news-section marquee ul li .heading a{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+  }
+
+  .main-right .news-section marquee ul li .heading a:hover{
+    text-decoration: underline;
+  }
+
+  .main-right .news-section marquee ul li .sub-heading h3{
+    text-decoration: underline;
+    margin-bottom: 1em;
+  }
+
+  .main-right .news-section marquee ul li .sub-heading p a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+  }
+
+  .main-right .news-section marquee ul li .sub-heading p a:hover{
+    text-decoration: underline; 
+  }
+
+  @media (max-width: 900px){
+    .main-right .news-section marquee ul li{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+    
+  @media (max-width: 768px){
+      main {
+          flex-direction: column;
+      }
+      .main-left {
+          width: 100%;
+      }
+      .main-right {
+          width: 100%;
+      }
+      .main-right .news-section marquee ul li{
+          grid-template-columns: repeat(1, 1fr);
+      }
+  }    
