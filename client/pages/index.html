@@ -35,7 +35,7 @@
 </head>
 <body>
     <!-- navbar starts here -->
-    <nav>
+    
 
       <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
         <img class="navbar-img" src="../images/logo.jpeg" alt="">
@@ -44,17 +44,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">Home</span></a>
-            <a class="nav-item nav-link" href="#">Services</a>
-            <a class="nav-item nav-link" href="#">Books</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
-            <a class="nav-item nav-link" href="#">Login</a>
+            <ul class="nav-links">
+              <li><a class="nav-item nav-link " id="i1" href="#">Home</span></a></li>
+              <li id="serv"><a  class="nav-item nav-link" href="#">Services</a>
+              <ul class="service">
+                <li><a class="nav-item nav-link" id="s1" href="#">Service 1</a></li>
+                <li><a class="nav-item nav-link" id="s2" href="#">Service 2</a></li>
+              </ul>
+              </li>
+              <li><a class="nav-item nav-link" id="i3" href="#">Books</a></li>
+              <li><a class="nav-item nav-link" href="#">Contact</a></li>
+              <li><a class="nav-item nav-link" id="i5" href="#">Login</a></li>
+              <li><a class="nav-item nav-link" href="#">Register</a></li>
+
+
+            </ul>
             
           </div>
         </div>
       </nav>
         
-    </nav>
+    
     <!-- navbar ends here -->
     <div class="main-heading">
       <h1 class="animate__animated animate__fadeInDown">Janapada Loka</h1>
