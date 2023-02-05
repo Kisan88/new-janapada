@@ -157,6 +157,127 @@ main {
 
 
   /* navbar css ends */
-
-
+  .main-heading_ {
+    margin-top: 70px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  main {
+    height: 1350px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_left_ {
+    width: 100%;
+	  height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: black; */
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 50px 0; */
+}
+.content{
+    
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: .4s;
+    background: white;
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transform: translate(0px,-8px);
+}
+img{
+    width: 125px;
+    height: 160px;
+    text-align: center;
+    /* border-radius: 20px; */
+    margin: 0 auto;
+    display: block;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.658);
+    padding-top: 0 8px;
+}
+h6{
+    font-size: 20px;
+    text-align: left;
+    color: #222f3e;
+    margin: 10px;
+}
+.product
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.symbol{
+  position: relative;
+  bottom: 8px;
+  font-size: 13px;
+}
+.symbols{
+  font-size: small;
+  padding-left: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+.pro{
+  text-align: left;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(167, 167, 51);
+}
+.pros{
+  text-align: left;
+  margin: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+@media(max-width:1000px){
+  .content{
+      width: 45%;
+  }
+}
+@media(max-width:750px){
+  .content{
+      width: 100%;
+  }
+}
   
