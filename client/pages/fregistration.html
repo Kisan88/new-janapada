@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form name="registrationForm" onsubmit="return   validateForm()" action="/server/bregistration.php" method="post">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" name="username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" name="passwordConfirm" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+      <div class="button">
+        <b>Already have an account ?</b>
+        <a type="submit" href="flogin.html" value="">Sign In</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function validateForm() {
+      var name = document.forms["registrationForm"]["username"].value;
+      var email = document.forms["registrationForm"]["email"].value;
+      var password = document.forms["registrationForm"]["password"].value;
+      var passwordConfirm = document.forms["registrationForm"]["passwordConfirm"].value;
+
+      if (name == "") {
+        alert("Userame must be filled out");
+        return false;
+      }
+
+      if (email == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+      var atposition = email.indexOf("@");
+      var dotposition = email.lastIndexOf(".");
+      if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= email.length) {
+        alert("Please enter a valid e-mail address");
+        return false;
+      }
+
+
+      if (password == "") {
+        alert("Password must be filled out");
+        return false;
+      }
+
+      if (passwordConfirm == "") {
+        alert("Password Confirm must be filled out");
+        return false;
+      }
+
+      if (password != passwordConfirm) {
+        alert("Passwords must match");
+        return false;
+      }
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+    }
+  </script>
+</body>
+
+</html>
