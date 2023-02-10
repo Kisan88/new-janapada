@@ -335,7 +335,7 @@ main {
 
   /* .................About Us Section Starts here.................... */
   .about-us{
-    margin-top: 4em;
+    margin: 4em 0;
   }
 
   .about-us-heading{
@@ -664,7 +664,7 @@ main {
   /* ..................Contact Us Section Starts here................... */
 
   .contact-us{
-    margin: 2em 0 4em 0;
+    margin: 6em 0;
   }
 
   .contact-us-heading{
@@ -737,6 +737,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: #eee8e8;
+    margin-bottom: 1em;
+  }
+
+  footer a:hover{
+    color: #fff;
+    transition: 0.3s ease-in-out;
   }
 
   @media (max-width: 900px){
