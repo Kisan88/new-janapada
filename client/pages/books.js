@@ -1,22 +1,30 @@
 // navbar js goes here
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
 
-document.onreadystatechange = function() {
-    let lastScrollPosition = 0;
-    const navbar = document.querySelector('.navbar');
-    const service = document.querySelector('.service');
-    window.addEventListener('scroll', function(e) {
-      lastScrollPosition = window.scrollY;
-      
-      if (lastScrollPosition > 10){
-        navbar.classList.add('navbar-dark');
-        service.classList.add('service-dark');
-      }
-      else{
-        navbar.classList.remove('navbar-dark');
-        service.classList.remove('service-dark');
-      }
-    });
-  }
+const sectionOneOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
+
+// sectionOneObserver.observe(sectionOne);
+
+document.querySelector("#check").addEventListener("change", (e) => {
+  (document.querySelector("#check").checked)? document.querySelector("#navb").classList.add("active"): document.querySelector("#navb").classList.remove("active")
+})
   
   
   
