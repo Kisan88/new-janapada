@@ -93,3 +93,4 @@ function removeItem(removeButton)
     recalculateCart();
   });
 }
+

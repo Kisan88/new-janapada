@@ -21,3 +21,8 @@ document.onreadystatechange = function() {
   
   
   // navbar js ends here
+  const product = document.getElementsByClassName("content")
+  function product()
+  {
+    onclick
+  }
