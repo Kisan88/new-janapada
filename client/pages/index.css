@@ -114,7 +114,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 3em 2em;
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);

@@ -34,6 +34,42 @@
     
     <title>Document</title>
     <link rel="stylesheet" href="product_description.css">
+
+    <style>
+      .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img {
+        display: none !important;
+      }
+      
+      .goog-tooltip {
+        display: none !important;
+      }
+      .goog-tooltip:hover {
+        display: none !important;
+      }
+      .goog-text-highlight {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+      }
+      body{
+        top: 0px !important;
+      }
+
+      #google_translate_element:hover{
+        padding-bottom: 1em !important;
+      }
+
+      .VIpgJd-ZVi9od-xl07Ob-lTBxed:hover{
+        text-decoration: none !important;
+      }
+
+      .n1:hover::after{
+        -webkit-transform: scaleX(0) !important;
+          transform: scaleX(0) !important;
+      }
+
+    </style>
+
 </head>
 <body>
     
@@ -64,9 +100,10 @@
         <li class="nav__list-item">
           <a href="contact.html" class="nav__link">Contact</a>
         </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__link n1" id="google_translate_element"></a>
+        </li>
        
-      
-        <li class="nav__list-item"><a href="#" class="nav__link">Kannada</a></li>
   
       </ul>
     </nav>
@@ -108,6 +145,20 @@
       </label>
       
   </header>
+  <script type="text/JavaScript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  <script>
+                    function googleTranslateElementInit(){
+                      new google.translate.TranslateElement({
+                        defaultLanguage: 'en',
+                        pageLanguage: 'en',
+                        includedLanguages: 'kn,en,hi,ml',
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                        autoDisplay: false,
+                        multilanguagePage: true
+                      }, 'google_translate_element')
+                    
+                    };
+                  </script>
 
           <!-- <div class="main-heading">
             <h1 class="animate__animated animate__fadeInDown">Janapada Loka</h1>

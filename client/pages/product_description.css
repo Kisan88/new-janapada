@@ -79,7 +79,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
+  padding: 3em 2em;
   transition: background 250ms ease-in;
   background: var(--background);
   color: var(--text);
@@ -129,10 +129,12 @@ main{
   transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
 }
 
+
 .nav__link:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
+
 
 .nav__link--btn {
   border: 1.5px solid currentColor;
