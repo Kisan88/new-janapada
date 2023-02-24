@@ -8,6 +8,7 @@
 
 body, html {
   overflow-x: hidden;
+  background: linear-gradient(135deg, #ffffff, #FFA500);
 }
 
 
@@ -31,7 +32,6 @@ main {
 .main-right {
     height: 550px;
     width: 50%;
-    background-color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -62,7 +62,6 @@ main {
   font-weight: lighter;
 
 }
-
 
 label #btn ,
 label #cancel{
@@ -99,8 +98,6 @@ label #cancel{
   /* visibility: visible; */
   display: block;
 } 
-
-
 
 header {
   --text: #f4f4f4;
@@ -497,7 +494,6 @@ header {
   .about-us{
     padding: 1em 2em 0 2em;
     font-family: 'Poppins', sans-serif;
-    background-color: #ECF2FF;
   }
   
   .about-us h1{
@@ -626,6 +622,7 @@ header {
     width: 600px;
     border-radius: 1em;
     padding: 2em;
+    background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
