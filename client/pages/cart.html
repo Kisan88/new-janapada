@@ -29,38 +29,138 @@
   src="https://code.jquery.com/jquery-3.6.3.js"
   integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
   crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a755459696.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  
 
+  
+  <style>
+    .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img {
+      display: none !important;
+    }
+    
+    .goog-tooltip {
+      display: none !important;
+    }
+    .goog-tooltip:hover {
+      display: none !important;
+    }
+    .goog-text-highlight {
+      background-color: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    body{
+      top: 0px !important;
+    }
+
+    #google_translate_element:hover{
+      padding-bottom: 1em !important;
+    }
+
+    .VIpgJd-ZVi9od-xl07Ob-lTBxed:hover{
+      text-decoration: none !important;
+    }
+
+    .n1:hover::after{
+      -webkit-transform: scaleX(0) !important;
+        transform: scaleX(0) !important;
+    }
+
+  </style>
    
     
 </head>
 <body>
-	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-		<img class="navbar-img" src="../images/logo.jpeg" alt="">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		  <div class="navbar-nav ml-auto">
-			<ul class="nav-links">
-			  <li><a class="nav-item nav-link " id="i1" href="./index.html">Home</span></a></li>
-			  <li id="serv"><a  class="nav-item nav-link" href="#">Services</a>
-			  <ul class="service">
-				<li><a class="nav-item nav-link" id="s1" href="#">Service 1</a></li>
-				<li><a class="nav-item nav-link" id="s2" href="#">Service 2</a></li>
-			  </ul>
-			  </li>
-			  <li><a class="nav-item nav-link" id="i3" href="./books.html">Books</a></li>
-			  <li><a class="nav-item nav-link" href="./product.html">Product</a></li>
-			  <li><a class="nav-item nav-link" id="i5" href="#">Login</a></li>
-			  <li><a class="nav-item nav-link" href="#">Register</a></li>
-        <li><a class="nav-item nav-link" href="cart.html"><img src="../images/icons8-shopping-cart-24.png"></a></li>
+  <header style="height: 70px;">
+    
+    <a href="#" class="site-logo" aria-label="homepage"><img class="logo" src="../images/logo.jpeg" alt=""></a>
+    <nav class="main-nav">
+
+     
 
 
-			</ul>
-			
-		  </div>
-		</div>
-	</nav>
+
+      <ul class="nav__list" id="navb">
+        <li class="nav__list-item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__list-item">
+          <a href="product.html" class="nav__link">Product</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="books.html" class="nav__link">Books</a>
+        </li>
+        <li id="serv" class="nav__list-item">
+          <a href="#" class="nav__link">Services</a>
+          <ul  class="service">
+              <li class="nav__list-item"><a class="nav__link" id="s1" href="#">Service 1</a></li>
+              <li class="nav__list-item" style="padding-bottom: 20px;"><a class="nav__link" id="s2" href="#">Service 2</a></li>
+            </ul>
+        </li>
+        <li class="nav__list-item">
+          <a href="contact.html" class="nav__link">Contact</a>
+        </li>
+       
+      
+        <li class="nav__list-item">
+          <a href="#" class="nav__link n1" id="google_translate_element"></a>
+        </li>
+  
+      </ul>
+    </nav>
+    <div class="account" style="right: 0%;">
+      <ul class="nav__list" id="icons">
+          <li class="nav__list-item">
+              <a  href="#" class="nav__link">
+                  <span id="icon1" class="material-symbols-outlined">
+                  shopping_cart
+                  </span></a>
+            </li>
+            <li  class="nav__list-item">
+              <a  href="#" class="nav__link"><span id="icon2" class="material-symbols-outlined">
+                  favorite
+                  </span></a>
+            </li>
+            <li  class="nav__list-item">
+              <a  href="#" class="nav__link"><span id="icon3" class="material-symbols-outlined">
+                  account_circle
+                  </span></a>
+            </li>
+            <!-- <li  class="nav__list-item">
+              <a  href="#" class="nav__link" style="margin-right: 0%;">Login </a>
+              <span>|</span>
+            
+              <a  href="#" class="nav__link">Register</a>
+            </li> -->
+            
+      </ul>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check" class="toggle">
+     </i> <span id="btn" class="material-symbols-outlined">
+        menu
+        </span>
+        </i> <span id="cancel" class="material-symbols-outlined">
+        close
+        </span>
+      </label>
+      
+  </header>
+
+  <script type="text/JavaScript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function googleTranslateElementInit(){
+      new google.translate.TranslateElement({
+        defaultLanguage: 'en',
+        pageLanguage: 'en',
+        includedLanguages: 'kn,en,hi,ml',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false,
+        multilanguagePage: true
+      }, 'google_translate_element')
+    
+    };
+  </script>    
+
+
 	<h1 class="animate__animated animate__fadeInDown">Shopping Cart</h1>
 
 <div class="shopping-cart">
