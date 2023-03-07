@@ -459,6 +459,29 @@ h6{
 .buy-4{
     background-color: gray;
 } */
+
+ /* .................Footer starts Here................. */
+  
+ footer{
+  background-color: black;
+  color: white;
+  padding: 1em 1em 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #eee8e8;
+  margin-bottom: 1em;
+}
+
+footer a:hover{
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
 @media(max-width:1000px){
     .content{
         width: 45%;
