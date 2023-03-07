@@ -38,8 +38,10 @@ body{
 }
 .content form .user-details{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
+  align-items: center;
   margin: 20px 0 12px 0;
 }
 form .user-details .input-box{
