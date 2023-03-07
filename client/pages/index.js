@@ -31,3 +31,15 @@ document.querySelector("#check").addEventListener("change", (e) => {
 
 
 // navbar js ends here
+
+
+// news section starts here
+var marquee = document.querySelector('marquee');
+marquee.addEventListener('mouseenter', function() {
+  marquee.stop();
+});
+
+marquee.addEventListener('mouseleave', function() {
+  marquee.start();
+});
+// news section ends here

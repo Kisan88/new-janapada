@@ -44,6 +44,42 @@ main {
     box-sizing: border-box;
     
   } */
+
+
+  /* News Section starts */
+  .news-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-section h2 {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  
+  .marquee-container {
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+  
+  .news-item {
+    display: block;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+    border-radius: 20px;
+    background-color: #eee;
+  }
+  /* News Section ends */
   
   /* navbar css starts */
 .site-logo {
