@@ -383,10 +383,14 @@ div.image {
   position: relative;
 }
 
+.button form{
+  margin-right: 1em;
+}
+
 .add-cart{
   display: block;
-  width: 215px;
-  height: 45px;
+  width: 170px;
+  height: 42px;
   color: #8167a9;
   padding: 10px;
   text-align: center;
@@ -394,7 +398,7 @@ div.image {
   border-radius: 5px ;
   background-color: white;
   font-weight: bold;
-  line-height: 25px;
+  line-height: 18px;
   margin-right: 20px;
   margin-bottom: 20px;
   text-decoration: none;
