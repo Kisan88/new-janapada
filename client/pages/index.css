@@ -626,7 +626,7 @@ header {
   .about-us .about-us-container-1 .about-us-img img, .about-us .about-us-container-2 .about-us-img img{
     width: 600px;
     height: 400px;
-    border-radius: 1em;
+    border-radius: 4em 0 4em 0;
     /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   }
   
