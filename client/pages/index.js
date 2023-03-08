@@ -43,3 +43,15 @@ marquee.addEventListener('mouseleave', function() {
   marquee.start();
 });
 // news section ends here
+
+
+// var showText = function (target, message, index, interval) {   
+//   if (index < message.length) {
+//     $(target).append(message[index++]);
+//     setTimeout(function () { showText(target, message, index, interval); }, interval);
+//   }
+// }
+
+// $(function () {
+//   showText("#msg", "Janapada Loka", 0, 300);   
+// });
