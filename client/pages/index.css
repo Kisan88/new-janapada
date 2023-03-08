@@ -949,14 +949,14 @@ header {
   .main-right-img-container {
     width:350px;
     height: 350px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 30px;
-    background-color: white;
+    background-color: inherit;
   }
   .main-right-img {
     width:100%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 0 3em 0 3em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
 
   
