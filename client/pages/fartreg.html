@@ -5,7 +5,42 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style1.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img {
+      display: none !important;
+    }
+    
+    .goog-tooltip {
+      display: none !important;
+    }
+    .goog-tooltip:hover {
+      display: none !important;
+    }
+    .goog-text-highlight {
+      background-color: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+    body{
+      top: 0px !important;
+    }
+
+    /* #google_translate_element:hover{
+      padding-bottom: 1em !important;
+    } */
+
+    .VIpgJd-ZVi9od-xl07Ob-lTBxed:hover{
+      text-decoration: none !important;
+    }
+
+    .n1:hover::after{
+      -webkit-transform: scaleX(0) !important;
+        transform: scaleX(0) !important;
+    }
+
+  </style>
 </head>
+
 
 <body>
 
@@ -16,6 +51,11 @@
       <form name="registrationForm" onsubmit="return   validateForm()" action="bartreg.php" method="post">
         <div class="user-details">
 
+          <div class="input-box">
+            <span class="details">Change Language</span>
+            <!-- <input type="text" placeholder="Enter your name" name="name" required> -->
+            <a href="#" id="google_translate_element"></a>
+          </div>
           <div class="input-box">
             <span class="details">Name</span>
             <input type="text" placeholder="Enter your name" name="name" required>
@@ -103,6 +143,20 @@
       </form>
     </div>
   </div>
+  <script type="text/JavaScript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                  <script>
+                    function googleTranslateElementInit(){
+                      new google.translate.TranslateElement({
+                        defaultLanguage: 'en',
+                        pageLanguage: 'en',
+                        includedLanguages: 'kn,en,hi,ml',
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                        autoDisplay: false,
+                        multilanguagePage: true
+                      }, 'google_translate_element')
+                    
+                    };
+      </script>
   <footer></footer>
   <script>
     function validateForm() {
