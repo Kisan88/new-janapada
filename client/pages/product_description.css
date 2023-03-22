@@ -109,9 +109,6 @@ header {
   
 }
 
-main{
-  margin-top: 300px;
-}
 
 
 .nav__link:after {
@@ -127,6 +124,10 @@ main{
   transition: -webkit-transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out;
   transition: transform 150ms ease-in-out, -webkit-transform 150ms ease-in-out;
+}
+
+.butt{
+  width: 220px !important;
 }
 
 
@@ -389,7 +390,7 @@ div.image {
 
 .add-cart{
   display: block;
-  width: 170px;
+  width: 220px;
   height: 42px;
   color: #8167a9;
   padding: 10px;
@@ -422,13 +423,13 @@ div.preview-image {
   float: left;
   padding: 0 0 20px 20px;
   width:50%;
-  max-width: 570px;
+  max-width: 800px;
   
 }
 
 div.preview-image img {
   width: 100%;
-  max-width: 450px;
+  max-width: 650px;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -457,11 +458,16 @@ div.image img:hover {
 width:90%;
 margin: auto;
 height: 500px;
-margin-top: 300px !important;
+margin-top: 200px !important;
 }
 
 .cost{
   font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.details{
+  font-size: 1.2em;
 }
 .quick_look {
   display: none;
@@ -486,6 +492,7 @@ margin-top: 300px !important;
   width:50%;
   padding: 0 30px 20px 20px;
   line-height: 1.5;
+  margin-left: 50px;
 
 }
 
@@ -509,7 +516,7 @@ div.product-info .selected {
 }
 
 .product-title {
-  font-size: 1.5em;
+  font-size: 2.3em;
 }
 
 .product-category {
@@ -603,14 +610,36 @@ div.preview-image img.thumbnail {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 400px) {
   #preview-enlarged {
-      float: none;
-  }
+    float: none;
+}
   #thumbnail-container {
       width: auto;
       margin-top: 10px;
   }
+
+  .product-info{
+    margin: 0%;
+    overflow-x: hidden !important;
+    padding-left: 20px !important;
+  }
+  .hr{
+    width: 200px;
+  }
+
+  .cost, .details{
+    font-size: 1.2em;
+  }
+
+  .product-title{
+    font-size: 1.6em;
+  }
+  .add-cart{
+    width: 170px;
+    margin-top: 10px;
+  }
+  
 }
 
 @media screen and (max-width:1080px) {
