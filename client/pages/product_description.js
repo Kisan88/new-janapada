@@ -19,6 +19,18 @@
 //   }
 
 
+function show() {
+ 
+  /* Access image by id and change
+  the display property to block*/
+  document.getElementById('icon5')
+          .style.display = "block";
+
+  document.getElementById('btnid')
+          .style.display = "none";
+}
+
+
   const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home-intro");
 
