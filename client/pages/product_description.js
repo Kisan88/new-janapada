@@ -29,6 +29,18 @@ function show() {
   document.getElementById('btnid')
           .style.display = "none";
 }
+function hide() {
+ 
+  /* Access image by id and change
+  the display property to block*/
+  
+
+  document.getElementById('icon5')
+          .style.display = "none";
+
+  document.getElementById('btnid')
+          .style.display = "block";
+}
 
 
   const header = document.querySelector("header");
